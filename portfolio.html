@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhanu Sai Prakash - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #ff6f61, #ff9671);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: fadeIn 1s ease-in-out;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #333;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('https://via.placeholder.com') no-repeat center center/cover;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+        .showcase h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: slideInFromLeft 1.5s ease-out;
+        }
+        .showcase p {
+            font-size: 1.5em;
+            animation: slideInFromRight 1.5s ease-out;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .showcase h1 {
+                font-size: 2.5em;
+            }
+            .showcase p {
+                font-size: 1.2em;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes backgroundAnimation {
+            0% {
+                background-color: #ff6f61;
+            }
+            100% {
+                background-color: #ff9671;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bhanu Sai Prakash</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="showcase">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my work and projects</p>
+    </section>
+
+    <div class="container">
+        <section id="about" class="content">
+            <h2>About Me</h2>
+            <p>Hello! I'm Bhanu Sai Prakash, a passionate professional with expertise in [Your Field/Profession]. My journey has been marked by a dedication to excellence and a commitment to continuous learning. Welcome to my portfolio where you can explore my projects, achievements, and professional journey.</p>
+        </section>
+
+        <section id="portfolio" class="content">
+            <h2>Portfolio</h2>
+            <p>Here are some of my projects:</p>
+            <ul>
+                <li><strong>Project 1:</strong> Description of Project 1</li>
+                <li><strong>Project 2:</strong> Description of Project 2</li>
+                <li><strong>Project 3:</strong> Description of Project 3</li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </section>
+
+        <section id="contact" class="content">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me at <a href="mailto:bhanu@example.com">bhanu@example.com</a>.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>Bhanu Sai Prakash &copy; 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
