@@ -1,2 +1,2 @@
 # portfolio
-mple site
+sample site
